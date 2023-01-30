@@ -13,6 +13,39 @@
                 line-height: 80px;
             }
 
+            nav {
+                background-color: #e5b8b7;
+                height: 50px;
+                border-top: 5px solid white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            nav ul {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav li {
+                font-size: large;
+                font-weight:550;
+                list-style: none;
+                padding: 0 0.25em 0 0;
+            }
+
+            nav li:after {
+                content: " | ";
+                color: white;
+                display: inline-block;
+                font-size: 100%;
+                margin: 0 0 0 0.5em;
+            }
+            nav li:last-child:after {
+                content: " ";
+            }
+
         </style>
         <meta charset="UTF-8"> <!-- is a character encoding capable of encoding all possible characters in Unicode -->
         <title>My Submission Dates</title>
@@ -21,6 +54,13 @@
         <header>
             <h1>About my courses</h1>
         </header>
+        <nav>
+            <ul>
+                <li><a href='#'>Submission Dates</a></li>
+                <li><a href='#'>Module Tutors</a></li>
+                <li><a href='#'>Class Times</a></li>
+            </ul>
+        </nav>
         <hr>
         <p>Information on <b>submission</b> dates.</p>
         <a href="moduleTutors.html">Module Tutors</a>
