@@ -16,7 +16,7 @@
             nav {
                 background-color: #e5b8b7;
                 height: 50px;
-                border-top: 5px solid white;
+                border-top: 2px solid white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -28,7 +28,7 @@
                 justify-content: center;
             }
 
-            nav li {
+            li {
                 font-size: large;
                 font-weight:550;
                 list-style: none;
@@ -46,6 +46,33 @@
                 content: " ";
             }
 
+            aside {
+                
+                width: 150px;
+                background-color: #e5b8b7;
+                border-top: 2px solid white;
+                border-right:2px solid white;
+            }
+
+            aside ul {
+                
+                display: inline-block;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            aside li {
+                
+                list-style: none;
+                margin-left: -25px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            aside li:first-child{
+                margin-top: 20px;
+            }
+
         </style>
         <meta charset="UTF-8"> <!-- is a character encoding capable of encoding all possible characters in Unicode -->
         <title>My Submission Dates</title>
@@ -61,6 +88,13 @@
                 <li><a href='#'>Class Times</a></li>
             </ul>
         </nav>
+        <aside>
+            <ul>
+                <li><a href="#">COMP10120</a></li>
+                <li><a href="#">COMP16421</a></li>
+                <li><a href="#">COMP16321</a></li>
+            </ul>
+        </aside>
         <hr>
         <p>Information on <b>submission</b> dates.</p>
         <a href="moduleTutors.html">Module Tutors</a>
