@@ -47,7 +47,9 @@
             }
 
             aside {
-                
+                display: inline-block;
+                float: left;
+                height: 300px;
                 width: 150px;
                 background-color: #e5b8b7;
                 border-top: 2px solid white;
@@ -55,14 +57,12 @@
             }
 
             aside ul {
-                
                 display: inline-block;
                 margin-top: 0;
                 margin-bottom: 0;
             }
 
             aside li {
-                
                 list-style: none;
                 margin-left: -25px;
                 margin-top: 50px;
@@ -71,6 +71,14 @@
 
             aside li:first-child{
                 margin-top: 20px;
+            }
+
+            main {
+                background-color: #f2dbdb;
+                border-top-style: solid;
+                border-top-color: white;
+                height: 300px;
+                display: inline-block;
             }
 
         </style>
@@ -95,9 +103,11 @@
                 <li><a href="#">COMP16321</a></li>
             </ul>
         </aside>
-        <hr>
-        <p>Information on <b>submission</b> dates.</p>
-        <a href="moduleTutors.html">Module Tutors</a>
-        <img src="deadline.jpeg" alt="A deadline Image" width="104" height="142">
+        <main>
+            <h1>Welcome</h1>
+            <p>Click one of the course codes to the left to learn more about that course or one of the links above to learn
+                general Information that relates to all courses.
+            </p>
+        </main>
     </body>
 </html>
