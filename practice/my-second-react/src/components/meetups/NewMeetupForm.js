@@ -3,7 +3,7 @@ import classes from "./NewMeetupForm.module.css";
 
 import { useRef } from "react";
 
-function NewMeetupForm() {
+function NewMeetupForm(props) {
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
@@ -16,6 +16,15 @@ function NewMeetupForm() {
     const enteredImage= imageInputRef.current.value;
     const enteredAddress= addressInputRef.current.value;
     const entereddescription= descriptionInputRef.current.value;
+
+    const meetupData = {
+        title: enteredTitle,
+        image: enteredImage,
+        address: enteredAddress,
+        description: entereddescription
+    }
+
+    props.onAddMeetup(meetupData);
   }
 
   return (
